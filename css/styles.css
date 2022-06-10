@@ -63,7 +63,7 @@ button {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid red;
+  /* outline: solid red; */
 }
 /* ----------ШАПКА----------*/
 
@@ -165,6 +165,16 @@ button {
   padding-bottom: 200px;
   padding-top: 200px;
   background-color: var(--head-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/index/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -299,6 +309,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .htwotitle.team-img {
@@ -324,6 +335,60 @@ button {
 
 .imageteam {
   margin-bottom: 30px;
+}
+
+.master-soc-list {
+  padding-bottom: 42px;
+}
+
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.master-soc-item:last-child {
+  margin-right: 0;
+}
+
+.master-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.master-soc-link:hover,
+.master-soc-link:focus {
+  background-color: #2196f3;
+}
+
+.master-soc-link:hover .masters-soc-icon,
+.master-soc-link:focus .masters-soc-icon {
+  fill: #ffffff;
+}
+
+.master-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-soc-icon {
+  fill: #afb1b8;
+}
+
+/* Постоянные клиенты */
+
+.permanent-clients {
+  padding-top: 94px;
+  margin-bottom: 42px;
+}
+
+.permanent-clients-list {
+  display: flex;
 }
 
 /* ----------ПОДВАЛ----------- */
@@ -409,6 +474,48 @@ button {
   text-decoration: none;
 }
 
+.master-soc-list {
+  padding-bottom: 42px;
+}
+
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.master-soc-item:last-child {
+  margin-right: 0;
+}
+
+.master-soc-link-footer {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.master-soc-link-footer:hover,
+.master-soc-link-footer:focus {
+  background-color: #2196f3;
+}
+
+.master-soc-link-footer:hover .masters-soc-icon,
+.master-soc-link-footer:focus .masters-soc-icon {
+  fill: #ffffff;
+}
+
+.master-soc-list-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-soc-icon-footer {
+  fill: #afb1b8;
+}
 /* ----------ШАПКА-ПОРТФОЛИО---------- */
 
 .contacts {
@@ -461,9 +568,7 @@ button {
 }
 
 .site-nav.list-images {
-  display: flex;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 .site-nav.list-portfolio {
