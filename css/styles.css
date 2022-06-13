@@ -117,12 +117,12 @@ button {
   list-style: none;
 }
 
-.contacts + .contacts {
-  margin-left: 50px;
-}
-
 .headder-contact {
+  display: flex;
+  list-style: none;
   margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
@@ -133,15 +133,12 @@ button {
   letter-spacing: 0.03em;
 }
 
-.site-nav,
-.contacts {
+.site-nav {
   color: var(--secondary-text-color);
 }
 
 .link:hover,
-.link:focus,
-.contacts:hover,
-.contacts:focus {
+.link:focus {
   color: var(--accent-text-color);
 }
 
@@ -157,6 +154,26 @@ button {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.contacts-icon {
+  fill: #757575;
+}
+
+.contacts {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contacts:hover .contacts-icon,
+.contacts:focus .contacts-icon {
+  fill: #2196f3;
 }
 
 /* ----------ГЕРОЙ---------- */
@@ -429,20 +446,32 @@ button {
   border-radius: 4px;
 }
 
-.masters-soc-icon {
-  fill: #afb1b8;
-}
-
-.permanent-client-icon {
+.permanent-client-link {
+  width: 170px;
+  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.permanent-client-item:hover,
+.permanent-client-item:focus {
+  border: 1px solid #2196f3;
+}
+
+.permanent-client-link {
+  fill: #afb1b8;
+}
+
+.permanent-client-link:hover,
+.permanent-client-link:focus {
+  fill: #2196f3;
+}
+
 /* ----------ПОДВАЛ----------- */
 
 .logo,
-.link,
-.contacts {
+.link {
   text-decoration: none;
 }
 
@@ -596,9 +625,14 @@ button {
   align-content: center;
 }
 
+.headder-contact-list
+
 /* ----------ШАПКА-ПОРТФОЛИО---------- */
 
 .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
